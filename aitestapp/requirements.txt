@@ -1,0 +1,7 @@
+pymysql
+pyyaml
+zhipuai
+python-docx
+#spacy
+paddlepaddle
+faiss-cpu

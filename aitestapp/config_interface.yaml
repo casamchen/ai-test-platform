@@ -1,0 +1,40 @@
+
+OPENAI_API_BASE: ""
+
+OPENAI_API_KEY: "afde2d15aa3dda8df72bcbc85bd2770a.PNPuNVjshgZ70qXi"
+
+OPENAI_API_MODEL_4V: "GLM-4-Plus"
+
+# 模型名称
+OPENAI_API_MODEL_4: "GLM-4-Plus" 
+
+# 最大线程数
+MAX_THREADING: 10 
+
+# 请求间隔，单位：秒
+REQUEST_INTERVAL: 10 
+
+# 项目名称
+PROJECT_NAME: "AI测试平台" 
+
+# 项目描述
+PROJECT_DESC: "含AI生成测试用例，AI接口测试，AI WEB自动化测试， AI APP自动化测试，含模型训练" 
+
+# 测试用URL列表
+TEST_URLS: [
+  {"url_type": "base_url", "url_desc": "测试环境", "url": "http://127.0.0.1:8000"}
+]
+
+# 接口文档
+API_DOCS: [
+  {"document": "./data/yangmekeji_api.html", "name": "yangmekeji_api", "v": "1.1.0"}
+]
+
+TEST_CASES: [
+  # "获取学员课程安排接口,用户未登录时访问接口,{'code': 401, 'msg': '用户未登录'}"
+  # "获取学员课程安排接口,用户登录后访问接口，有评分记录且符合条件,{'code': 0, 'msg': '包含课程安排信息'}"
+  # "登录接口,用户名正确，密码正确,{'code': 0, 'msg': '登录成功', 'user': 'walker'}"
+  # "登录接口,用户名正确，密码错误,{'code': 403, 'msg': '用户名或密码错误'}"
+  "登录接口,用户名为空，密码不为空,{'code': 401, 'msg': '用户未登录'}"
+]
+
