@@ -129,15 +129,6 @@ npm run dev
 # → http://localhost:8080
 ```
 
-### 关键数据（简历上写的 91% / 87% 怎么来的）
-
-详见 `docs/EVALUATION.md`（待补）。方法简述：
-
-- 数据源：100 份历史需求文档 + 对应的 800 条人工编写测试用例
-- 切分：80 train / 10 val / 10 test
-- 评估：字段级 (title / preconditions / steps / expected) precision / recall
-- 数字基于在 held-out test set 的人工标注结果
-
 ### License
 
 MIT © Jiasheng Chen
